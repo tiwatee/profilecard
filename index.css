@@ -17,7 +17,7 @@
 
 html, body{
     height: 100%;
-    background-image: linear-gradient(to top right,  hsl(0, 0%, 59%), hsl(185, 75%, 39%));
+    background-color:hsl(185, 75%, 39%);
     background-repeat: no-repeat;
     font-family: kumbh_sans;
 }
@@ -26,6 +26,41 @@ html, body{
     text-align: center;
     min-height: 100vh;  
 }
+
+.topleft{
+    height: 100vh;
+    background-repeat: no-repeat ;
+    background-image: url(./images/bg-pattern-top.svg); 
+    background-position: left -30vh top -80vh;
+}
+.rightbot{
+    height: 100vh;
+    background-repeat: no-repeat ;
+    background-image: url(./images/bg-pattern-bottom.svg);
+    background-position: right -30vh bottom -80vh;
+}
+
+@media only screen and (max-width:768px) {
+    .topleft{
+        background-position: left -705px top -650px;
+    }
+    .rightbot{
+        background-position: right -705px bottom -650px ;
+    }
+}
+
+@media only screen and (min-width:1024px) {
+    .topleft{
+        background-position: left -420px top -400px;
+    }
+    .rightbot{
+        background-position: right -420px bottom -400px;
+    }
+} 
+
+
+
+
 .profcard{
     background-color: white;
     position: absolute;
@@ -91,6 +126,7 @@ hr{
 .attribution {
     font-size: 11px;
     text-align: center;
+    font-weight: 700;
 }
 .attribution a {
     color: hsl(228, 45%, 44%);
