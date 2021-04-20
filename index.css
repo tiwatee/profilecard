@@ -1,0 +1,144 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-size: 18px;
+    color: hsl(229, 23%, 23%);
+}
+
+@font-face {
+    font-family: kumbh_sans;
+    src: url(./font/Kumbh_Sans/KumbhSans-Light.ttf);
+}
+@font-face {
+    font-family: kumbh_sansbold;
+    src: url(./font/Kumbh_Sans/KumbhSans-Bold.ttf);
+}
+
+html, body{
+    height: 100%;
+    background-image: linear-gradient(to top right,  hsl(0, 0%, 59%), hsl(185, 75%, 39%));
+    background-repeat: no-repeat;
+    font-family: kumbh_sans;
+}
+.wrapper{
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;  
+}
+.profcard{
+    background-color: white;
+    position: absolute;
+    width: 50vh;
+    height: 55vh;
+    margin: auto;
+    border-radius: 20px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.topim{
+    background-image: url(./images/bg-pattern-card.svg);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    height: 20vh;
+    width: 50vh;
+    color: beige;
+}
+.botim img{
+    height: 18vh;
+    width: 18vh;
+    margin-top: 11vh;
+    border-radius: 50%;
+    border: solid 5px white;
+    
+}
+h1{
+    font-size: 1em;
+    margin: 10px 0;
+    font-weight: 700;
+    font-family: kumbh_sansbold;
+}
+span{
+    font-weight: 400;
+    font-family: kumbh_sans;
+}
+h5{
+    font-weight: 400;
+    font-family: kumbh_sans;
+    padding-bottom: 20px;
+}
+p{
+    font-size: 0.6em;
+    font-family: kumbh_sans;
+    font-weight: 400;
+}
+hr{
+    margin: auto;
+    border: thin 0.01rem hsl(229, 23%, 23%);
+}
+.stats{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.statscol{
+    padding: 5vh;
+    padding-top: 2.5vh;
+    margin: auto;
+}
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+    font-size: 11px;
+}
+
+@media only screen and (max-width:768px){
+    .profcard{
+        width: 80%;
+    }
+    .topim{
+        width: 100%;
+    }
+
+    h1{
+        font-size: 1rem;
+    }
+    span{
+        font-size: 1rem;
+    }
+    h5{
+        font-size: 1rem;
+    }
+    p{
+        font-size: 0.7rem;
+    }
+    .stats{
+        width: 100%;
+
+    }
+    .statscol{
+        padding: 20px;
+        padding-top: 10px;
+        margin: auto;
+    }
+}
+
+@media only screen and (max-width:375px) {
+    h1{
+        font-size: 0.8rem;
+    }
+    span{
+        font-size: 0.8rem;
+    }
+    h5{
+        font-size: 0.8rem;
+    }
+    p{
+        font-size: 0.5rem;
+    }
+}
