@@ -40,15 +40,6 @@ html, body{
     background-position: right -40vh bottom -90vh;
 }
 
-@media only screen and (max-width:768px) {
-    .topleft{
-        background-position: left -705px top -650px;
-    }
-    .rightbot{
-        background-position: right -705px bottom -650px ;
-    }
-}
-
 @media only screen and (max-width:1024px) {
     .topleft{
         background-position: left -420px top -400px;
@@ -58,8 +49,14 @@ html, body{
     }
 } 
 
-
-
+@media only screen and (max-width:768px) {
+    .topleft{
+        background-position: left -705px top -650px;
+    }
+    .rightbot{
+        background-position: right -705px bottom -650px ;
+    }
+}
 
 .profcard{
     background-color: white;
